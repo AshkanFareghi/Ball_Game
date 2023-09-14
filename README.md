@@ -10,7 +10,12 @@ Game Over screen:
 
 ![](screen-shots/Screenshot%20from%202023-09-13%2017-26-58.png)
 
-To deploy this project:
+To install pygame module:
+
+    sudo apt install python3-pip
+    pip install pygame   
+
+To deploy this game:
 
     sudo apt install git
     https://github.com/AshkanFareghi/Ball_Game
