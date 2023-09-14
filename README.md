@@ -26,4 +26,3 @@
     python3 main.python3
 
 Hope you enjoy the simple game!
-Ashkan
