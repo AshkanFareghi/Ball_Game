@@ -19,7 +19,7 @@
 ## To deploy this game:
 
     sudo apt install git
-    git clone ttps://github.com/AshkanFareghi/Ball_Game
+    git clone https://github.com/AshkanFareghi/Ball_Game
 ## To run the Game:
 
     cd Ball_Game
