@@ -49,7 +49,7 @@ Player = pg.image.load('player.png')
 Ball = pg.image.load('ball.png')
 
 
-# Creating the game window
+# Game window
 window = pg.display.set_mode((800, 600))
 
 # Background Music
