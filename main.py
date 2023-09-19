@@ -1,11 +1,12 @@
 # This is Ash.
-# Import necessary libraries
 import pygame as pg
+from pygame import mixer
 import tkinter as tk
 from time import sleep
 from sys import exit
 
-# Function to display the game over screen
+
+#Game over Screen
 def show_game_over(score):
     root = tk.Tk()
     root.geometry("500x500")
@@ -13,7 +14,6 @@ def show_game_over(score):
 
     this_score = score
 
-    # Read the high score from a file and update it if necessary
     try:
         with open("High_score.txt", "r") as f:
             high_score = int(f.read())
@@ -26,7 +26,7 @@ def show_game_over(score):
             f.write(str(this_score))
         high_score = this_score
 
-    # Create and display labels and a button in the tkinter window
+    #Labels
     Label = tk.Label(root, text="Game Over!\n")
     Label.config(font=("Arial", 42))
     Label.pack()
@@ -40,18 +40,23 @@ def show_game_over(score):
 
     root.mainloop()
 
-# Initialize pygame
+#Initialize pygame
 pg.init()
 
-# Load images
+#Images
 Icon = pg.image.load('ufo.png')
 Player = pg.image.load('player.png')
 Ball = pg.image.load('ball.png')
 
-# Create the game window
-window = pg.display.set_mode((800, 600), pg.NOFRAME)
 
-# Set window title and icon
+# Creating the game window
+window = pg.display.set_mode((800, 600))
+
+# Background Music
+mixer.music.load('music.mp3')
+mixer.music.play(-1)
+
+#Window title and Icon
 pg.display.set_caption('Save the ball')
 pg.display.set_icon(Icon)
 
@@ -66,7 +71,7 @@ y_change_ball = -3
 state = "mirror"
 score = 0
 
-# Main game loop
+# Main loop
 while True:
     for event in pg.event.get():
         # Handle quit events
@@ -114,11 +119,9 @@ while True:
     else:
         if not statement1 and not statement2:
             state = "mirror"
-
-    # Draw game objects and update display
+    
     window.blit(Ball, (x_ball, y_ball))
     window.blit(Player, (x, y))
     pg.display.update()
 
-    # Control frame rate
     sleep(0.008)

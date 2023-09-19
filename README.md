@@ -4,12 +4,12 @@
 
 ## In Game pictures:
 
-![](screen-shots/Screenshot%20from%202023-09-13%2017-24-15.png)
-![](screen-shots/Screenshot%20from%202023-09-13%2017-24-31.png)
+![](screen-shots/Screenshot1.png)
+![](screen-shots/Screenshot3.png)
 
 ## Game Over Screenshot:
 
-![](screen-shots/Screenshot%20from%202023-09-13%2017-26-58.png)
+![](screen-shots/Screenshot2.png)
 
 ## To install pygame module:
 
