@@ -44,7 +44,6 @@ def show_game_over(score):
 pg.init()
 
 #Images
-Icon = pg.image.load('ufo.png')
 Player = pg.image.load('player.png')
 Ball = pg.image.load('ball.png')
 
