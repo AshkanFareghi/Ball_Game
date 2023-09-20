@@ -23,6 +23,6 @@
 ## To run the Game:
 
     cd Ball_Game
-    python3 main.python3
+    python3 main.py
 
 Hope you enjoy the simple game!
