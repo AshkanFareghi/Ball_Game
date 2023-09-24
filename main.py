@@ -26,7 +26,7 @@ def show_game_over(score):
             f.write(str(this_score))
         high_score = this_score
 
-    #Here are the labels.
+    #Labels
     Label = tk.Label(root, text="Game Over!\n")
     Label.config(font=("Arial", 42))
     Label.pack()
@@ -70,7 +70,6 @@ y_change_ball = -3
 state = "mirror"
 score = 0
 
-# Main loop
 while True:
     for event in pg.event.get():
         # Handle quit events
@@ -88,7 +87,7 @@ while True:
         elif event.type == pg.KEYUP:
             player_change = 0
 
-    # Update game elements and screen
+    #Update game elements and screen
     window.fill((255, 255, 255))
     x_ball += x_change_ball
     y_ball += y_change_ball
