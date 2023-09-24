@@ -26,7 +26,7 @@ def show_game_over(score):
             f.write(str(this_score))
         high_score = this_score
 
-    #Labels
+    #Here are the labels.
     Label = tk.Label(root, text="Game Over!\n")
     Label.config(font=("Arial", 42))
     Label.pack()
