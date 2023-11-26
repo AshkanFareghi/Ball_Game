@@ -1,6 +1,6 @@
 
 # Ball Game
-
+A simple python game with music.
 
 ## In Game pictures:
 
@@ -20,7 +20,7 @@
 
     sudo apt install git
     git clone https://github.com/AshkanFareghi/Ball_Game
-## To run the Game:
+## To run the game:
 
     cd Ball_Game
     python3 main.py
