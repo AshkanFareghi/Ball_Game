@@ -24,5 +24,3 @@ A simple python game with music.
 
     cd Ball_Game
     python3 main.py
-
-Hope you enjoy the simple game!
