@@ -16,7 +16,7 @@ A simple python game with music.
     sudo apt install python3-pip
     pip install pygame   
 
-## To deploy this game:
+## To deploy the game:
 
     sudo apt install git
     git clone https://github.com/AshkanFareghi/Ball_Game
